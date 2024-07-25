@@ -1,0 +1,38 @@
+{
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": "v20.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexLancev/tenloc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexLancev/tenloc/issues"
+  },
+  "homepage": "https://alexlancev.github.io/tenloc",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
+    "mongoose": "^8.4.3",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "react-input-mask": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
