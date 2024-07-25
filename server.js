@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT || 5000;
-const url_api = process.env.URL;
+const url_api = process.env.MONGODB_URI;
 
 app.use(express.json());
 
